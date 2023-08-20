@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/index"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"
+            tools:src="@drawable/index" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Current Date and Time"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:text="InternSavy Internship Task"
+                android:textAlignment="center"
+                android:textColor="#673AB7"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+         tools:ignore="MissingConstraints">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="116dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="116dp"
+
+                android:background="@android:color/holo_orange_dark"
+                android:textColor="@color/white"
+                android:textSize="60sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="94dp">
+
+                <Button
+                    android:id="@+id/divide"
+                    android:layout_width="115dp"
+                    android:layout_height="match_parent"
+                    android:onClick="setinput"
+                    android:text="/"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+                <Button
+                    android:id="@+id/module"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:onClick="setinput"
+                    android:text="%"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    app:layout_column="1"
+                    app:layout_row="0" />
+
+                <Button
+                    android:id="@+id/ac"
+                    android:layout_width="181dp"
+                    android:layout_height="match_parent"
+                    android:onClick="addtext"
+                    android:text="AC"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    app:layout_column="0"
+                    app:layout_row="0" />
+
+            </androidx.gridlayout.widget.GridLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="96dp">
+
+                <Button
+                    android:id="@+id/nine"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:onClick="addtext"
+                    android:text="9"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+                <Button
+                    android:id="@+id/eight"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:onClick="addtext"
+                    android:text="8"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    app:layout_column="1"
+                    app:layout_row="0" />
+
+                <Button
+                    android:id="@+id/seven"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:onClick="addtext"
+                    android:text="7"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    app:layout_column="0"
+                    app:layout_row="0" />
+
+                <Button
+                    android:id="@+id/multiply"
+                    android:layout_width="105dp"
+                    android:layout_height="match_parent"
+                    android:onClick="setinput"
+                    android:text="*"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    app:layout_column="3"
+                    app:layout_row="0" />
+            </androidx.gridlayout.widget.GridLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="96dp">
+
+                <Button
+                    android:id="@+id/six"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:onClick="addtext"
+                    android:text="6"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+                <Button
+                    android:id="@+id/five"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:onClick="addtext"
+                    android:text="5"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    app:layout_column="1"
+                    app:layout_row="0" />
+
+                <Button
+                    android:id="@+id/four"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:onClick="addtext"
+                    android:text="4"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    app:layout_column="0"
+                    app:layout_row="0" />
+
+                <Button
+                    android:id="@+id/minuse"
+                    android:layout_width="105dp"
+                    android:layout_height="match_parent"
+                    android:onClick="setinput"
+                    android:text="-"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    app:layout_column="3"
+                    app:layout_row="0" />
+            </androidx.gridlayout.widget.GridLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="96dp">
+
+                <Button
+                    android:id="@+id/three"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:onClick="addtext"
+                    android:text="3"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+                <Button
+                    android:id="@+id/two"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:onClick="addtext"
+                    android:text="2"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    app:layout_column="1"
+                    app:layout_row="0" />
+
+                <Button
+                    android:id="@+id/one"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:onClick="addtext"
+                    android:text="1"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    app:layout_column="0"
+                    app:layout_row="0" />
+
+                <Button
+                    android:id="@+id/plus"
+                    android:layout_width="105dp"
+                    android:layout_height="match_parent"
+                    android:onClick="setinput"
+                    android:text="+"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    app:layout_column="3"
+                    app:layout_row="0" />
+            </androidx.gridlayout.widget.GridLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="96dp">
+
+                <Button
+                    android:id="@+id/equal"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:onClick="equal"
+                    android:text="="
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    app:layout_column="1"
+                    app:layout_row="0" />
+
+                <Button
+                    android:id="@+id/zero"
+                    android:layout_width="199dp"
+                    android:layout_height="match_parent"
+                    android:onClick="addtext"
+                    android:text="0"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    app:layout_column="0"
+                    app:layout_row="0" />
+
+            </androidx.gridlayout.widget.GridLayout>
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
